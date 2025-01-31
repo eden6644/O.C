@@ -1,0 +1,28 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+.custom-bg-primary {
+    background-color: #0429B5; /* Remplace #yourcolorcode par le code couleur de ton choix */
+}
+.custom-bg-secondary{
+    background-color: #FF8500;
+}
+.nav-item{
+    transition: all .5s;
+    height: max-content;
+}
+.nav-item:hover, .nav-item:focus{
+    background-color:#FF8500;
+}
+.nav-item a:hover{
+    color: white;
+}
+.nav-item a:focus{
+    color: #FF8500;
+}
