@@ -1,11 +1,6 @@
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+
 body {
-    padding-top: 70px; /* Adjust based on the height of your navbar */
+    padding-top: 70px;
 }
 .custom-bg-primary {
     background-color: #0429B5; /* Remplace #yourcolorcode par le code couleur de ton choix */
@@ -13,16 +8,48 @@ body {
 .custom-bg-secondary{
     background-color: #FF8500;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-nav{
+    height: 100%;
+}
 .nav-item{
     transition: all .5s;
-    height: max-content;
+    height: 60px;
 }
 .nav-item:hover, .nav-item:focus{
     background-color:#FF8500;
+    color: white;
 }
 .nav-item a:hover{
     color: white;
 }
-.nav-item a:focus{
-    color: #FF8500;
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 20px;
+    display: inline-block;
+    height: 57.6px;
+    width: 160px;
+}
+.custom-box{
+    min-height: 200px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.custom-box:hover{
+    box-shadow: var(--bs-shadow-lg)!important;
+}
+.staff .card{
+    min-height: 265px;
 }
