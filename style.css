@@ -1,47 +1,103 @@
 
-body {
-    padding-top: 70px;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    overflow-x: hidden;
+}
+.yellow{
+    color: #FF8500;
+    font-weight: 700;
+}
+
 .custom-bg-primary {
     background-color: #0429B5; /* Remplace #yourcolorcode par le code couleur de ton choix */
 }
 .custom-bg-secondary{
     background-color: #FF8500;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #0429B6;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    width: 100vw;
     z-index: 1000;
+    background-color: #fff;
+    backdrop-filter: blur(40px);
 }
+
 .navbar-nav{
     height: 100%;
 }
+.navbar img{
+    height: 38px;
+    width: auto;
+}
 .nav-item{
-    transition: all .5s;
-    height: 60px;
-}
-.nav-item:hover, .nav-item:focus{
-    background-color:#FF8500;
-    color: white;
-}
-.nav-item a:hover{
-    color: white;
-}
-.nav-item {
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
+    transition: all .5s ease-in-out;
+    height: 54px;
 }
+.nav-item li{
+    text-align: center;
+}
+.nav-item .nav-link:hover{
+    /* transform: translateY(1px); */
+    color: #0429B6;
+    /* text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5); */
+}
+.nav-item .nav-link.active{
+    transform: scale(1.09);
+    /* transform: translateY(1px); */
+    color: #0429B6;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 .nav-item a {
     text-decoration: none;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1em;
     font-weight: bold;
     padding: 0 20px;
     display: inline-block;
-    height: 57.6px;
-    width: 160px;
+    height: 45px;
+    width: 150px;
+    transition: all .5s ease-in-out;
+}
+.banner {
+    height: 100vh;
+    background-image: url(/img/photo\ sur\ chantier.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.5);
+}
+.banner-text{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 20px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 .custom-box{
     min-height: 200px;
@@ -50,6 +106,37 @@ body {
 .custom-box:hover{
     box-shadow: var(--bs-shadow-lg)!important;
 }
+.section1 img{
+    height: 340px;
+    width: 500px;
+    object-fit: cover;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
 .staff .card{
     min-height: 265px;
+}
+.staff .card img{
+    height: 200px;
+    object-fit: cover;
+}
+.competences .card{
+    min-height: 359px!important;
+}
+
+.service img{
+    height: 200px;
+    object-fit: cover;
+}
+.mission img{
+    height: 500px;
+    object-fit: cover;
+}
+.competence img{
+    height: 300px;
+    object-fit: cover;
+}
+.galerie-carousell img{
+    height: 533px;
+    width: 800px;
+    object-fit: cover;
 }
