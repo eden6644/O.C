@@ -9,6 +9,9 @@ html{
 body {
     overflow-x: hidden;
 }
+h1, h2{
+    text-transform: uppercase;
+}
 .yellow{
     color: #FF8500;
     font-weight: 700;
@@ -78,11 +81,30 @@ h1, h2, h3, h4, h5, h6 {
     width: 150px;
     transition: all .5s ease-in-out;
 }
+.background-clip{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+        height: auto;
+        width: 100%;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .background-clip{
+        height: 100%;
+        width: auto;
+    }
+}
 .banner {
     height: 100vh;
-    background-image: url(/img/photo\ sur\ chantier.jpeg);
+    /* background-image: url(/img/photo\ sur\ chantier.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +127,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .custom-box:hover{
     box-shadow: var(--bs-shadow-lg)!important;
+}
+.section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+} 
+body section{
+    scroll-margin-top: 110px; /* Pour compenser la hauteur de la navbar fixe */
 }
 .section1 img{
     height: 340px;
@@ -139,4 +168,158 @@ h1, h2, h3, h4, h5, h6 {
     height: 533px;
     width: 800px;
     object-fit: cover;
+}
+.project-img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.backdrop-blur {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 768px) {
+    .project-img {
+        height: 500px;
+        width: 100%; /* ou max-width: 100% */
+    }
+}
+.project-img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    transition: transform 0.6s ease;
+}
+
+.carousel-item.active .project-img {
+    transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+    .project-img {
+        height: 450px;
+    }
+}
+
+@media (min-width: 992px) {
+    .project-img {
+        height: 500px;
+    }
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+#galerie {
+    position: relative;
+    background-image: url('img/vu\ de\ haut\ loin.jpeg'); /* Remplace avec ton image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* ou auto selon ton besoin */
+    overflow: hidden;
+}
+#galerie p{
+    color: whitesmoke;
+}
+
+#galerie::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Couleur par-dessus (noir semi-transparent) */
+    backdrop-filter: blur(10px); /* Effet flou */
+    -webkit-backdrop-filter: blur(10px); /* Support Safari */
+    z-index: 1;
+}
+
+/* Pour que le contenu passe au-dessus du voile flouté */
+#galerie > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* 
+.carousel-indicators.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.carousel-indicators.thumbnails button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-indicators.thumbnails button.active,
+.carousel-indicators.thumbnails button:hover {
+    opacity: 1;
+}
+
+.carousel-indicators.thumbnails img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.carousel-indicators.thumbnails button.active img,
+.carousel-indicators.thumbnails button:hover img {
+    border-color: #007bff; /* Couleur bleue Bootstrap, à ajuster */
+
+
+/* staff */
+#staff h5 {
+  font-weight: 600;
+}
+
+#staff span {
+  font-style: italic;
+}
+
+
+input[type="text"], input[type="email"], input[type="number"] {
+    border: none; /* Supprimer toutes les bordures */
+    border-bottom: 2px solid #0429B6; /* Bordure uniquement en bas */
+    background-color: transparent; /* Fond transparent */
+    outline: none; /* Pas d'effet de focus par défaut */
+    width: 100%; /* Largeur adaptée */
+    padding: 5px 0; /* Espacement */
+    transition: border-color 0.3s ease; /* Transition pour un effet esthétique */
+    border-radius: 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, input[type="number"]:focus {
+    border-bottom: 2px solid #0056d6; /* Couleur changée au focus */
+    background: none;
+}
+footer a.text-white:hover {
+    color: #f1c40f; /* Couleur jaune dorée au survol */
+    text-decoration: underline; /* Souligne au survol */
+}
+
+footer i {
+    transition: transform 0.2s ease;
+}
+
+footer i:hover {
+    transform: scale(1.2); /* Légère augmentation au survol */
+}
+footer h5{
+    color: #FF8500;
+}
+#map{
+    height: 200px;
+
 }
