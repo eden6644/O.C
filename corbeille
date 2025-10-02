@@ -1,0 +1,59 @@
+<section data-aos="fade-up" id="staff" class="my-5">
+  <!-- Full-width Header Image -->
+  <div class="w-100">
+    <img src="img/team.jpg" alt="Our Team" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+  </div>
+
+  <!-- Title -->
+  <div class="container text-center my-4">
+    <h2 class="fw-bold">Notre Équipe</h2>
+    <p class="lead text-muted">Les personnes derrière notre succès</p>
+  </div>
+
+  <!-- Staff List -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Staff Member 1 -->
+      <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">Joel KABILA</h5>
+        <span class="text-muted">Directeur Gérant</span>
+      </div>
+      <!-- Staff Member 2 -->
+      <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">Guylain FATAKI</h5>
+        <span class="text-muted">Directeur Financier</span>
+      </div>
+      <!-- Staff Member 3 -->
+      <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">David MWANDWE</h5>
+        <span class="text-muted">Directeur Technique</span>
+      </div>
+      <!-- Staff Member 4 -->
+       <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">Jordan MUPATI</h5>
+        <span class="text-muted">Métreur</span>
+       </div>
+       <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">Ralph MWANDWE</h5>
+        <span class="text-muted">Designer</span>
+        </div>
+        <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">Luc KABEYA</h5>
+        <span class="text-muted">Logisticien</span>
+    </div>
+        <!-- Staff Member 7 -->
+    <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
+        <h5 class="mb-0">Paul KASAKWA</h5>
+        <span class="text-muted">Comptable</span>
+    </div>
+    </div>
+        
+    </div>
+        <!-- Staff Member 5 -->
+    
+    </div>
+        <!-- Staff Member 6 -->
+    
+    </div>
+  </div>
+</section>

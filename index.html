@@ -23,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">A propos</a>
+                            <a href="#about" class="nav-link ">A propos</a>
                         </li>
                         <li class="nav-item">
                             <a href="#m&v" class="nav-link">Mission & Vision</a>
@@ -37,9 +37,9 @@
                         <li class="nav-item">
                             <a href="#galerie" class="nav-link">Galerie</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#staff" class="nav-link">Notre Staff</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a href="contact.html#contact" class="nav-link">Renseignez-vous</a>
                         </li>
@@ -134,33 +134,42 @@
             </div>
         </div>
     </section>
-<section data-aos="fade-up" class="container-fluid my-5 service section" id="services" style="width: 100vw; padding-left:10px; padding-right: 10px; background-color: #0428b618;">
-    <div class="row text-center">
+<section data-aos="fade-up" 
+         class="container-fluid my-5 service section d-flex flex-column justify-content-center align-items-center text-center" 
+         id="services" 
+         style="width: 100vw; padding:10px; background-color: #0428b618; height: 100vh;">
+
+    <!-- Titre + Paragraphe -->
+    <div class="row mb-4 w-100">
         <div class="col-12">
             <h2>Nos Services</h2>
             <p class="lead">Découvrez les services que nous offrons</p>
         </div>
     </div>
-    <div class="row">
-        <div data-aos="fade-right" class="col-md-4">
+
+    <!-- 3 Services -->
+    <div class="row w-100 justify-content-center">
+        <div data-aos="fade-right" class="col-md-4 d-flex justify-content-center">
             <div class="card mb-4 shadow-lg custom-box">
                 <img src="/img/service1.webp" class="card-img-top" alt="Service 1">
                 <div class="card-body">
                     <h5 class="card-title">Conception, Rénovation & Réhabilitation</h5>
-                    <p class="card-text">Conception & études complètes de vos projet de construction, rénovation ou de réhabilitation</p>
+                    <p class="card-text">Conception & études complètes de vos projets de construction, rénovation ou de réhabilitation</p>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" class="col-md-4">
+
+        <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center">
             <div class="card mb-4 shadow-lg custom-box">
                 <img src="img/service2.jpg" class="card-img-top" alt="Service 2">
                 <div class="card-body">
                     <h5 class="card-title">Maintenance et Expertise en Ouvrage de Génie Civil</h5>
-                    <p class="card-text">Nous assurons la <strong style="color: #FF8500;">durabilité</strong> et la <strong style="color: #FF8500;">sécurité de vos infrastructures</strong> grâce à un savoir-faire précis et fiable.</p>
+                    <p class="card-text">Nous assurons la <strong style="color: #FF8500;">durabilité</strong> et la <strong style="color: #FF8500;">sécurité</strong> de vos infrastructures.</p>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-left" class="col-md-4">
+
+        <div data-aos="fade-left" class="col-md-4 d-flex justify-content-center">
             <div class="card mb-4 shadow-lg custom-box">
                 <img src="img/service3.jpg" class="card-img-top" alt="Service 3">
                 <div class="card-body">
@@ -171,6 +180,7 @@
         </div>
     </div>
 </section>
+
 <section data-aos="fade-up" class=" competence my-5 section" id="competence" style="background-color: #f8f9fa;width: 100vw;">
     <div class="row text-center">
         <div class="col-12">
@@ -552,65 +562,10 @@
         </div>
     </div>
 </section> -->
-<section data-aos="fade-up" id="staff" class="my-5">
-  <!-- Full-width Header Image -->
-  <div class="w-100">
-    <img src="img/team.jpg" alt="Our Team" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
-  </div>
 
-  <!-- Title -->
-  <div class="container text-center my-4">
-    <h2 class="fw-bold">Notre Équipe</h2>
-    <p class="lead text-muted">Les personnes derrière notre succès</p>
-  </div>
+<div></div>
 
-  <!-- Staff List -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <!-- Staff Member 1 -->
-      <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">Joel KABILA</h5>
-        <span class="text-muted">Directeur Gérant</span>
-      </div>
-      <!-- Staff Member 2 -->
-      <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">Guylain FATAKI</h5>
-        <span class="text-muted">Directeur Financier</span>
-      </div>
-      <!-- Staff Member 3 -->
-      <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">David MWANDWE</h5>
-        <span class="text-muted">Directeur Technique</span>
-      </div>
-      <!-- Staff Member 4 -->
-       <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">Jordan MUPATI</h5>
-        <span class="text-muted">Métreur</span>
-       </div>
-       <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">Ralph MWANDWE</h5>
-        <span class="text-muted">Designer</span>
-        </div>
-        <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">Luc KABEYA</h5>
-        <span class="text-muted">Logisticien</span>
-    </div>
-        <!-- Staff Member 7 -->
-    <div class="col-md-8 mb-3 d-flex justify-content-between align-items-center border-bottom pb-2">
-        <h5 class="mb-0">Paul KASAKWA</h5>
-        <span class="text-muted">Comptable</span>
-    </div>
-    </div>
-        
-    </div>
-        <!-- Staff Member 5 -->
-    
-    </div>
-        <!-- Staff Member 6 -->
-    
-    </div>
-  </div>
-</section>
+
   
     <footer class="text-white pt-5 pb-3" style="background: linear-gradient(90deg, #0429b6 60%, #FF8500 100%); width: 100vw;">
         <div class="container">
