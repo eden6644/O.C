@@ -50,6 +50,11 @@ h1{
     margin-bottom: 20px;
     font-weight: 700;
 }
+h1.display-1{
+    
+    color: #8197f0;
+}
+
 h2{
     font-size: 2em;
     margin-bottom: 18px;
@@ -80,23 +85,33 @@ h1, h2, h3, h4, h5, h6{
     font-optical-sizing: auto;
     text-transform: uppercase;
     color: #0429B6;
-    letter-spacing: 3px;
+    letter-spacing: 0.05em;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 
 }
-
+.lead{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #f0f0f0 !important;
+}
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;
+    letter-spacing: 0.02em;
 }
 .yellow{
     font-family: 'Raleway', sans-serif !important;
     color: #FF8500;
     font-weight: 700;
 }
-
+.galerie-title{
+    color: #FF8500;
+}
+#galerie-p{
+    color: #f0f0f0 !important;
+}
 .custom-bg-primary {
     background-color: #0429B5; /* Remplace #yourcolorcode par le code couleur de ton choix */
 }

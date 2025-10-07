@@ -57,3 +57,53 @@
     </div>
   </div>
 </section>
+
+
+<section data-aos="fade-up" 
+         class="container-fluid my-5 service section d-flex flex-column justify-content-center align-items-center text-center" 
+         id="services" 
+         style="width: 100vw; padding:10px; background-color: #0428b618; height: 100vh;">
+        <!-- Titre + Paragraphe -->
+        <div class="row mb-4 w-100">
+            <div class="col-12">
+                <h2>Nos Services</h2>
+                <p class="lead">Découvrez les services que nous offrons</p>
+            </div>
+        </div>
+
+        <!-- 3 Services -->
+        <div class="row w-100 justify-content-center">
+            <div data-aos="fade-right" class="col-md-4 d-flex justify-content-center">
+                <div class="card mb-4 shadow-lg custom-box">
+                    <img src="img/service1.webp" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Conception, Rénovation & Réhabilitation</h5>
+                        <p class="card-text">Conception & études complètes de vos projets de construction, rénovation ou de réhabilitation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center">
+                <div class="card mb-4 shadow-lg custom-box">
+                    <img src="img/service2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Maintenance et Expertise en Ouvrage de Génie Civil</h5>
+                        <p class="card-text">Nous assurons la <strong style="color: #FF8500;">durabilité</strong> et la <strong style="color: #FF8500;">sécurité</strong> de vos infrastructures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" class="col-md-4 d-flex justify-content-center">
+                <div class="card mb-4 shadow-lg custom-box">
+                    <img src="img/service3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fournitures des matériaux de construction</h5>
+                        <p class="card-text">La qualité au service de vos projets pour <strong style="color: #FF8500;">bâtir solide et durable</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</section>
+
+    
