@@ -221,6 +221,23 @@ p{
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* ou la hauteur que tu veux */
+  overflow: hidden; /* évite que la vidéo dépasse */
+  border-radius: 10px; /* optionnel : coins arrondis */
+}
+
+/* La vidéo s’adapte à la taille du parent */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* couvre toute la div sans déformation */
+  object-position: center;
+  display: block;
+}
+
 .custom-box{
     min-height: 200px;
     transition: box-shadow 0.3s ease-in-out;

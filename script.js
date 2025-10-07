@@ -75,7 +75,7 @@
         });
     });
 // Liste des vidéos dans votre dossier 'img'
-const videos = ['vid.mp4', 'vid2.mp4']; // Remplacez par les noms de vos vidéos
+const videos = ['vid.mp4', 'vid2.mp4','maisonvid.mp4']; // Remplacez par les noms de vos vidéos
 
 // Fonction pour choisir une vidéo aléatoire
 function getRandomVideo() {
