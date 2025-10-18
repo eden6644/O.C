@@ -120,6 +120,9 @@ p{
   white-space: nowrap;
   border: 0;
 }
+.card-why{
+    background-color: #0428b618;
+}
 
 .galerie-title{
     color: #FF8500;
