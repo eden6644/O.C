@@ -23,6 +23,87 @@
 
     <meta name="robots" content="index, follow">
 
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "Organization",
+            "@id": "https://optimumcompany.net/#organization",
+            "name": "OPTIMUM COMPANY SERVICES SARL",
+            "url": "https://optimumcompany.net/",
+            "logo": "https://optimumcompany.net/img/ocLogo.png",
+            "description": "OPTIMUM COMPANY SERVICES SARL est une entreprise d’ingénierie civile et d’architecture basée à Lubumbashi, spécialisée dans la conception, la construction, la rénovation et la maintenance des ouvrages de génie civil."
+            },
+            {
+            "@type": "LocalBusiness",
+            "@id": "https://optimumcompany.net/#localbusiness",
+            "name": "OPTIMUM COMPANY SERVICES SARL",
+            "image": "https://optimumcompany.net/img/ocLogo.png",
+            "url": "https://optimumcompany.net/",
+            "telephone": "+243 852 372 381",
+            "email": "optimumsarl@hotmail.com",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "70, Avenue De La Source, C/Annexe V/Lubumbashi",
+                "addressLocality": "Lubumbashi",
+                "addressRegion": "Haut-Katanga",
+                "postalCode": "711501",
+                "addressCountry": "CD"
+            },
+            "areaServed": [
+                { "@type": "City", "name": "Lubumbashi" },
+                { "@type": "City", "name": "Likasi" },
+                { "@type": "City", "name": "Kolwezi" }
+            ],
+            "openingHours": "Mo-Fr 08:00-17:00",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -11.639252788566868,
+                "longitude": 27.43379777505468
+            },
+            "parentOrganization": {
+                "@id": "https://optimumcompany.net/#organization"
+            }
+            },
+            {
+            "@type": "Service",
+            "@id": "https://optimumcompany.net/#service1",
+            "name": "Conception, Rénovation & Réhabilitation",
+            "provider": {
+                "@id": "https://optimumcompany.net/#organization"
+            },
+            "serviceType": "Architecture et ingénierie civile",
+            "areaServed": ["Lubumbashi", "Likasi", "Kolwezi"],
+            "description": "Études, conception et réhabilitation complète de vos projets de construction, qu’ils soient résidentiels, commerciaux ou industriels."
+            },
+            {
+            "@type": "Service",
+            "@id": "https://optimumcompany.net/#service2",
+            "name": "Maintenance et Expertise en Ouvrages de Génie Civil",
+            "provider": {
+                "@id": "https://optimumcompany.net/#organization"
+            },
+            "serviceType": "Inspection et maintenance d’infrastructures",
+            "areaServed": ["Lubumbashi", "Likasi", "Kolwezi"],
+            "description": "Service d’entretien, d’inspection et d’expertise technique pour garantir la durabilité et la sécurité de vos ouvrages."
+            },
+            {
+            "@type": "Service",
+            "@id": "https://optimumcompany.net/#service3",
+            "name": "Fourniture des Matériaux de Construction",
+            "provider": {
+                "@id": "https://optimumcompany.net/#organization"
+            },
+            "serviceType": "Commerce de matériaux",
+            "areaServed": ["Lubumbashi", "Likasi", "Kolwezi"],
+            "description": "Distribution de matériaux de construction de haute qualité pour des projets solides et durables."
+            }
+        ]
+        }
+</script>
+
 </head>
 <body>
     <header>
@@ -30,7 +111,7 @@
         <nav class="navbar navbar-expand-lg shadow" style="background-color: #0428b618;">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a href="index.html" class="navbar-brand">
-                    <img src="img/ocLogo.png" alt="">
+                    <img src="img/ocLogo.png" alt="logo optimumcompany">
                 </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
@@ -621,7 +702,7 @@
                     </ul>
                 </div>
                 <!-- Social -->
-                <div class="col-12 col-md-4">
+                <!-- <div class="col-12 col-md-4">
                     <h5 class="fw-bold mb-3">Suivez-nous</h5>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -630,7 +711,7 @@
                         <a href="#" class="text-white fs-4" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <hr class="border-light my-4">
             <div class="row">
                 <div class="col-12 text-center small">
