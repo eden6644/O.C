@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <title>Document</title>
+        <title>Page de Contact Optimum Company</title>
     </head>
 <body>
     <header>
@@ -58,23 +58,28 @@
         </div>
         <div class="row align-items-stretch">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <form class="p-4 shadow rounded bg-white">
+                <form action="https://formsubmit.co/your@email.com" method="POST" class="p-4 shadow rounded bg-white">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nom</label>
-                        <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required style="border: none; border-bottom: 2px solid #0429B6; background-color: transparent; outline: none; width: 100%; padding: 5px 0; transition: border-color 0.3s ease; border-radius: 0;"></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Votre message" required style="border: none; border-bottom: 2px solid #0429B6; background-color: transparent; outline: none; width: 100%; padding: 5px 0; transition: border-color 0.3s ease; border-radius: 0;"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="budget" class="form-label">Budget (USD)</label>
                         <input type="number" class="form-control" id="budget" placeholder="Votre budget">
                     </div>
+
+                    <input type="hidden" name="_subject" value="New Email for Rehoboth S.A.R.L">
+                    <input type="hidden" name="_next" value="https://eden6644.github.io/Rehoboth/contact.html?showPopup=true">
+                    
+                    <input type="hidden" name="_captcha" value="false">
                     <button type="submit" class="btn btn-primary w-100" style="background: linear-gradient(90deg, #0429B6 60%, #4e7fff 100%); border: none;">Envoyer</button>
                 </form>
             </div>
