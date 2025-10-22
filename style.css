@@ -89,6 +89,137 @@ h1, h2, h3, h4, h5, h6{
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
 
 }
+
+/* loader */
+#oc-preloader {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(4,40,182,0.95) 0%, rgba(255,133,0,0.95) 100%);
+            color: #fff;
+            flex-direction: column;
+            gap: 1rem;
+            transition: opacity 500ms ease, visibility 500ms ease;
+            opacity: 1;
+            visibility: visible;
+            backdrop-filter: blur(6px);
+        }
+
+        #oc-preloader.loaded {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        /* Card */
+        #oc-preloader .box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.6rem 1rem;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.06);
+            box-shadow: 0 6px 30px rgba(2,6,23,0.45);
+        }
+
+        /* Logo */
+        #oc-preloader .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 10px;
+            overflow: hidden;
+            flex: 0 0 56px;
+            display: grid;
+            place-items: center;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        #oc-preloader .logo img{ width: 40px; height: auto; display: block; }
+
+        /* Spinner */
+        .oc-spinner {
+            width: 56px;
+            height: 56px;
+            position: relative;
+        }
+        .oc-spinner svg { width: 100%; height: 100%; transform-origin: 50% 50%; animation: spin 1.6s linear infinite; }
+        .oc-spinner circle {
+            fill: none;
+            stroke: #fff;
+            stroke-opacity: 0.16;
+            stroke-width: 4;
+        }
+        .oc-spinner .ring {
+            stroke: #fff;
+            stroke-opacity: 0.95;
+            stroke-linecap: round;
+            stroke-width: 4;
+            stroke-dasharray: 120;
+            stroke-dashoffset: 40;
+            animation: dash 1.6s ease-in-out infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes dash {
+            0% { stroke-dashoffset: 120; stroke-opacity: 0.95; }
+            50% { stroke-dashoffset: 40; stroke-opacity: 0.6; }
+            100% { stroke-dashoffset: 120; stroke-opacity: 0.95; }
+        }
+
+        /* Text */
+        #oc-preloader .meta {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: left;
+        }
+        #oc-preloader .meta .brand {
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            font-size: 1rem;
+            color: #fff;
+        }
+        #oc-preloader .meta .tag {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            color: rgba(255,255,255,0.92);
+        }
+
+        /* Subtle animated underline */
+        #oc-preloader .meta .underline {
+            margin-top: 6px;
+            height: 3px;
+            width: 48px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, rgba(255,255,255,0.18), rgba(255,255,255,0.55));
+            transform-origin: left center;
+            animation: glow 1.8s ease-in-out infinite;
+            opacity: 0.9;
+        }
+        @keyframes glow {
+            0% { transform: scaleX(0.3); opacity: 0.6; }
+            50% { transform: scaleX(1); opacity: 1; }
+            100% { transform: scaleX(0.3); opacity: 0.6; }
+        }
+
+        /* Small note */
+        #oc-preloader .loading-note {
+            margin-top: 10px;
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.9);
+            opacity: 0.95;
+        }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .oc-spinner, .oc-spinner svg { animation: none; }
+            .oc-spinner .ring { animation: none; }
+            #oc-preloader .meta .underline { animation: none; }
+        }
 .lead{
     font-size: 1.25rem;
     font-weight: 300;
