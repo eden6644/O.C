@@ -22,59 +22,7 @@
     </head>
 <body>
     <header>
-        <script>
-        /* Préloader behaviour: fade out on full load, then remove from DOM */
-        (function(){
-            const pre = document.getElementById('oc-preloader');
-            if (!pre) return;
-
-            function finish() {
-                // mark not busy for assistive tech
-                pre.setAttribute('aria-busy', 'false');
-                pre.classList.add('loaded');
-                // remove from DOM after transition to avoid keeping overlay active
-                setTimeout(() => {
-                    try { pre.remove(); } catch (e) { pre.style.display = 'none'; }
-                }, 600);
-            }
-
-            // If load already happened (very fast), run immediately
-            if (document.readyState === 'complete') {
-                finish();
-            } else {
-                // Wait full window load to ensure media (video, images) ready
-                window.addEventListener('load', finish, { once: true });
-                // Fallback: if not triggered after 5s, hide anyway
-                setTimeout(() => {
-                    if (!pre.classList.contains('loaded')) finish();
-                }, 5000);
-            }
-        })();
-        </script>
-
-        <div id="oc-preloader" role="status" aria-live="polite" aria-busy="true" aria-label="Chargement du site">
-            <div class="box" aria-hidden="false">
-                <div class="logo" aria-hidden="true">
-                    <img src="img/ocLogo.png" alt="Optimum Company logo">
-                </div>
-
-                <div class="oc-spinner" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
-                        <circle cx="32" cy="32" r="28"></circle>
-                        <circle class="ring" cx="32" cy="32" r="28"></circle>
-                    </svg>
-                </div>
-
-                <div class="meta">
-                    <div class="brand">OPTIMUM COMPANY SERVICES</div>
-                    <div class="tag">Ingénierie civile · Lubumbashi · Likasi · Kolwezi</div>
-                    <div class="underline" aria-hidden="true"></div>
-                </div>
-            </div>
-
-            <div class="loading-note">Préparation du contenu…</div>
-        </div>
-
+        
         <nav class="navbar navbar-expand-lg shadow" style="background-color: #0428b618;">
             <div class="container d-flex justify-content-between align-items-center">
                 <a href="index.html" class="navbar-brand">
